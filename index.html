@@ -1,0 +1,1201 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Learn More</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <style>.ui-hide-label { float: left; }</style>
+    <style>
+      .ui-page { background: #FFFFFF;}
+    </style>
+  </head>
+  <body>
+    <form id='info' action="/" method="post">
+      <script>
+        function sendEmail(){
+            $.post( 'http://hep-supporting-pages.herokuapp.com/sendmail.php', $('#info').serialize() );
+        }
+      </script>
+      <div data-role="page" id="info">
+        <center>
+          <img alt="" border="0" src="/images/80px-transparent.png" width="80" height="46">
+        </center>
+        <ul data-role="listview">
+          <li><a href="#humane-menu">What is humane eating?</a></li>
+          <li><a href="#issues">The issues with food</a></li>
+          <li><a href="#watchlist">Watch List</a></li>
+          <li><a href="#talkingpoints">Raising Awareness</a></li>
+          <li><a href="#howcanihelp">How can I help?</a></li>
+          <li><a href="#howtogohumane">Restaurants: How to go humane</a></li>
+          <li><a href="#suggestions">Suggestions/Contact Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <br>
+          <center>
+            <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+              <tbody>
+                <tr>
+                  <td>
+                    The Humane Eating Project was developed by <b>America For Animals</b>, a registered 503(c) non-profit.<br><br>
+                    Thank you to the 150 supporters who donated to make this possible!  We especially thank these volunteers who have donated many hours of time and these Founding Members:<br> <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <b>
+            Monika Gorkani<br>
+            Heather Zupin<br>
+            Jenny Karkoska<br>
+            Jon & Darina Bockman<br>
+            John & Abby Devine<br>
+            Doug Taylor<br>
+            <a href="http://www.towerplazaacupuncture.com/">Tower Plaza Acupuncture</a><br>
+            Tim & Himne Drees<br>
+            <br><br><br>
+            </b>
+          </center>
+        </ul>
+      </div>
+      <div data-role="page" id="humane-menu" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>&nbsp;</h1>
+        </header>
+        <ul data-role="listview">
+          <li><a href="#humane">The term "humane eating"</a></li>
+          <li><a href="#restaurants">How do restaurants get included?</a></li>
+          <li><a href="#termmisuse">Can restaurants misuse the term?</a></li>
+          <li><a href="#terms">Other terms like "Free Range"</a></li>
+        </ul>
+      </div>
+      <div data-role="page" id="humane" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>The term "humane eating"</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Humane eating is eating food that is Vegan, Vegetarian or Humanely Raised.   <br><br>
+                A humane eater is concerned about how animals are treated in our factory farm food system.  As a humane eater, you are making a choice to stop creating demand for cruel food.<br><br>
+                We aren’t trying to police restaurants or apply strict definitions of humane at this time. Our goal is more modest: to simply map out where humane options are and promote restaurants that are trying to do the right thing. <br><br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="restaurants" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>How do restaurants get included?</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                All Vegan and Vegetarian restaurants can be included.<br><br>
+                Any restaurant that offers a vegan or vegetarian menu can be included.  These restaurants are "Veg Friendly" restaurants.<br><br>
+                Any meat-serving restaurant that has one or more options clearly identified as Humanely Raised can be included.   These are called "Humane Friendly" restaurants.   In-store signage about the restaurant's humane sourcing policies qualify it for inclusion.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="termmisuse" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Can restaurants misuse the term?</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Restaurants use variations of the term:  Humane,  Humanely Raised,  Humanely Treated etc..  While it is possible that the term might get misused, the vast majority of these restaurants are committed to doing the right thing.
+                <br><br>
+                In future versions of the app, we plan to highlight restaurants that are sourcing from humane certified farms accredited by Global Animal Partnership (GAP), Animal Welfare Approved (AWA), or Certified Humane. These organizations have the highest standards for animal welfare and perform audit to verify that their standards are met.  It is important to note that even the highest standards do not cover all animal welfare issues. While they are a tremendous improvement, they do not mean the animal lived an entirely free of cruelty. The most humane option is always vegan. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="terms" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>What about other terms like "Free Range", "Organic" or "Cage-Free"</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Some of these terms indicate small improvements in the treatment of farm animals, but none amount to a cruelty free life. Many of these terms address only one issue of animal welfare. For example, cage-free chickens will not be in cages, but may still face overcrowding and beak trimming in large, warehouse like factories. There is no third party auditing to verify most of these terms. 
+                For a great guide on all animal product labels, visit the HSUS’s website:
+                <br>
+                <a href="http://www.humanesociety.org/issues/confinement_farm/facts/meat_dairy_labels.html">Meat & Dairy Labels</a><br>
+                <a href="http://www.humanesociety.org/issues/confinement_farm/facts/guide_egg_labels.html">Egg Labels</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="issues" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>The issues with food</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>  
+                Below is a summary of issues that animals face in typical factory farm production methods. Farms that are third party humane certified have rid themselves of most of these cruel practices. 
+                <br><br>
+                Please see content warning below.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ul data-role="listview">
+          <li><a href="#chickensB">Chickens (Broiler)</a></li>
+          <li><a href="#chickensE">Chickens (Eggs)</a></li>
+          <li><a href="#cowsB">Cows (Beef)</a></li>
+          <li><a href="#cowsD">Cows (Dairy)</a></li>
+          <li><a href="#pigs">Pigs</a></li>
+          <li><a href="#turkeys">Turkeys</a></li>
+          <li><a href="#sheep-lamb">Sheep/Lamb</a></li>
+          <li><a href="#seafood">Seafood</a></li>
+          <li><a href="#watchlist">The Watch List</a></li>
+          <li><a href="#resources">Resources/Links</a></li>
+        </ul>
+        <br>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>  
+                Warning:<br><br>
+                While we have done our best to use a neutral tone and avoid graphic language as much as possible, the nature of the issues can still be shocking and overwhelming. There are no graphic pictures in this app, nor or there any at the web pages we link to. We recommend reading about the issues slowly and at your own pace. Be proud of yourself for learning more about where your food comes from.  This awareness is a major step in humane eating.
+            </tr>
+            </td>
+        </table>
+      </div>
+      <div data-role="page" id="chickensB" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Chickens (Broiler)</h1>
+        </header>
+        <ul data-role="listview">
+          <li><a href="#Cconfinement">Confinement & crowding</a></li>
+          <li><a href="#Cbeak">Beak trimming</a></li>
+          <li><a href="#Cantibiotics">Antibiotics</a></li>
+          <li><a href="#Csize-sleep">Unnatural size & sleep</a></li>
+          <li><a href="#Cgrowth-span">Rapid growth and life span</a></li>
+          <li><a href="#Ctransport">Transport</a></li>
+          <li><a href="#Cslaughter">Slaughter</a></li>
+        </ul>
+      </div>
+      <div data-role="page" id="Cconfinement" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Confinement &amp; crowding</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Broiler chickens on factory farms are raised overcrowded warehouses, often with less than half of a square foot of space to live their entire lives. This intense confinement leads to conflict amongst the birds.  <br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Cbeak" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Beak trimming</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Workers cut off part of the bird’s beak to prevent them from injuring other birds.  This impairs their ability to eat, drink, and preen. Beak trimming is not necessary to prevent conflict if adequate space and enrichment is provided. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Cantibiotics" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Antibiotics</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Antibiotics are wildly overused on factory farms to prevent illness caused by unsanitary conditions of the environment.  In the USA, about 80% of all antibiotics used on healthy farm animals. The overuse of antibiotics leads to antibiotic-resistant bacteria or “super bugs.” 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Csize-sleep" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Unnatural size and sleep</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                As long as the lights are on, chickens will stay awake and eat. Factory farms house chickens in buildings that are lit 24/7. The light causes the chickens to eat continuously to gain weight rapidly. Such rapid weight gain causes leg abnormalities and can be fatal.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Cgrowth-span" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Rapid growth and life span</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Chickens on factory farms are designed to grow fast and quickly for maximum efficiency. A chicken’s natural lifespan is 5-8 years, but the standard chicken today is killed after 35-49 days
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Ctransport" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Transport</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Most animals are not killed on the farms where they were raised. They must be transported to slaughterhouses, which are usually several states away. During the trip the animals are typically kept in dark trucks without adequate space, food, or water. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Cslaughter" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Slaughter</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Poultry is not included in the Humane Slaughter Act and there are no other federal protections for poultry. You can imagine the cruelty this allows. We will spare you the details. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="chickensE" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Chickens (Eggs)</h1>
+        </header>
+        <ul data-role="listview">
+          <li><a href="#Econfinement">Confinement & crowding</a></li>
+          <li><a href="#Cantibiotics">Antibiotics</a></li>
+          <li><a href="#Cbeak">Beak trimming</a></li>
+          <li><a href="#Echicks">What happens to the babies?</a></li>
+          <li><a href="#Emolting">Starvation (Molting)</a></li>
+          <li><a href="#Elifespan">Overproduction and life span</a></li>
+          <li><a href="#Cantibiotics">Antibiotics</a></li>
+          <li><a href="#Cslaughter">Slaughter</a></li>
+        </ul>
+      </div>
+      <div data-role="page" id="Econfinement" data-add-back-btn="true" >
+        <header data-role="header">
+          <h1>Confinement and crowding</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Most egg-laying hens are kept in severely restrictive cages that prohibit most natural behaviors, including spreading their wings.  <br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Echicks" data-add-back-btn="true" >
+        <header data-role="header">
+          <h1>What happens to the chicks?</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Warning: Sad<br><br>In the past, female chickens were used for eggs and male chickens were used for poultry. Today, different breeds are used for each purpose. This results in billions of unwanted male chicks. Follow the link for details on how the egg industry solves this problem.  The facts are shocking.  We are providing a Wiklipedia link because of the neutral tone and there are no pictures at the site. <a href="http://en.wikipedia.org/wiki/Chick_culling">Wikipedia - Chick Culling</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Emolting" data-add-back-btn="true" >
+        <header data-role="header">
+          <h1>Starvation (Molting)</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Hens are starved for 7-14 days to induce molting. This increases egg production and quality. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Elifespan" data-add-back-btn="true" >
+        <header data-role="header">
+          <h1>Overproduction and life span</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                The average life span of an egg laying hens is 5-8 years. Because hens on factory farms are overworked to produce more eggs, they are considered “spent” after 1-2 years. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="cowsB" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Cows (Beef)</h1>
+        </header>
+        <ul data-role="listview">
+          <li><a href="#Bconfinement">Confinement and crowding</a></li>
+          <li><a href="#Bfeed">Feed</a></li>
+          <li><a href="#Bdehorning">Dehorning</a></li>
+          <li><a href="#Bcastration">Castration</a></li>
+          <li><a href="#Bbranding">Branding</a></li>
+          <li><a href="#Bhormones">Hormones</a></li>
+          <li><a href="#Cantibiotics">Antibiotics</a></li>
+          <li><a href="#Ctransport">Transport</a></li>
+          <li><a href="#Bslaughter">Slaughter</a></li>
+        </ul>
+        &nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+      </div>
+      <div data-role="page" id="Bconfinement" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Confinement</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Cows are confined in overcrowded feed lots, often with concrete floors and pens to fatten them up. This causes foot, leg problems and aggression.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Bfeed" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Feed</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Warning: Gross<br><br>Although most farm animals are designed to eat grass, what they are actual fed varies depend on cost, efficiency, and effect on flavor. Ingredients fed to animals include corn, soy, candy, other animals (including cows), animal waste, and antibiotics. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Bdehorning" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Dehorning</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                At most factory farms, workers cut off the cows’ horns without pain control. Dehorning is a painful procedure, especially for older animals.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Bcastration" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Castration</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Beef cattle castration is extremely painful and typically carried out without any pain medication at most factory farms. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Bbranding" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Branding</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Branding is done without anesthesia.  A fire hot iron, designed in the shape of the farm's logo, is placed on the skin of the animal to create an identifying mark. Branding is not necessary because there are other forms of identification. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Bhormones" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Hormones</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Hormones are commonly used to speed growth in beef production. Their use by both the beef and dairy industries is associated with animal welfare problems. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Bslaughter" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Slaughter</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Warning: Some graphic language<br><br>Although the Humane Slaughter Act requires cattle and pigs to be unconscious before they are killed, the act is largely unenforced and there are several loopholes. Many problems occur due to the size of the slaughterhouse. Because so many animals are processed in such a short time, mistakes are made. Mistakes include animals going though the process alive, worker injuries, and contamination by e. Coli or other bacteria. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      <div data-role="page" id="cowsD" data-add-back-btn="true" >
+        <header data-role="header">
+          <h1>Cows (Dairy)</h1>
+        </header>
+        <ul data-role="listview">
+          <li><a href="#Bfeed">Feed</a></li>
+          <li><a href="#Dtaildocking">Tail docking</a></li>
+          <li><a href="#Dhormones">Hormones</a></li>
+          <li><a href="#Cantibiotics">Antibiotics</a></li>
+          <li><a href="#Doverproduction">Overproduction and life span</a></li>
+          <li><a href="#Dbabies">What happens to the babies?</a></li>
+          <li><a href="#Ctransport">Transport</a></li>
+          <li><a href="#Bslaughter">Slaughter</a></li>
+        </ul>
+      </div>
+      <div data-role="page" id="Dtaildocking" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Tail docking</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Some dairy cows have more than half of their tails removed, usually without anesthesia. Tail docking is very painful and makes it difficult for cows to fend off flies. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Dhormones" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Hormones</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Hormones are used to make cows produce more milk (up to 4 times as much as they would naturally produce). This can cause painful inflammation of the udders. Hormones in dairy products have been linked to health problems in humans. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Doverproduction" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Overproduction and life span</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Like egg-laying hens, dairy cows have much shorter lives because they are overworked. A cow’s natural lifespan is twenty-five years. Most cows in the dairy industry live only four or five years
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Dbabies" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>What happens to the babies?</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Warning: Sad<br><br>
+                Cows produce milk naturally to feed their young. To ensure the cows keep producing milk, workers impregnate them every year. Calves are taken from their mothers within a day of being born. Female calves are used for dairy (like their mothers). Male calves are used for veal.
+                <br><br>
+                See the Watch List section for more information about Veal. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Doverproduction" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Overproduction and life span</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Like egg laying hens, being overworked greatly shortens a dairy cow’s lifespan. A cow’s natural lifespan is 25 years. Most cows in the dairy industry only live to be 4 or 5.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="pigs" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Pigs</h1>
+        </header>
+        <ul data-role="listview">
+          <li><a href="#Pconfinement">Confinement & gestation crates</a></li>
+          <li><a href="#Pfeed">Feed</a></li>
+          <li><a href="#Ptaildocking">Tail docking</a></li>
+          <li><a href="#Pnoserings">Nose rings</a></li>
+          <li><a href="#Pearnotching">Ear notching</a></li>
+          <li><a href="#Pcastration">Castration w/o pain control</a></li>
+          <li><a href="#Pheat">Extreme heat</a></li>
+          <li><a href="#Cantibiotics">Antibiotics</a></li>
+          <li><a href="#Plifespan">Life span</a></li>
+          <li><a href="#Ctransport">Transport</a></li>
+          <li><a href="#slaughter">Slaughter</a></li>
+        </ul>
+        &nbsp;<br> &nbsp;<br> &nbsp;<br> &nbsp;<br> &nbsp;<br>
+      </div>
+      <div data-role="page" id="Pconfinement" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Confinement and gestation crates</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Pregnant sows are kept in crates with no room to turn around. Because sows give birth frequently, they may spend most of their lives in these crates. 
+                <br><br>Gestation crates have gained a lot of media attention and are prohibited by all humane certifications as well as a handful of states. Many restaurants have pledged to not use pork from farms that use gestation crates.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Pfeed" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Feed</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Warning: Gross<br><br>
+                Although most farm animals are designed to eat grass, what they are actual fed varies depend on cost, efficiency, and effect on flavor. Ingredients fed to animals include corn, soy, candy, other animals, animal waste, and antibiotics. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Ptaildocking" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Tail docking</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                To prevent the pigs from biting the tails of other pig, workers remove their tails. This is a painful process that results in chronic, long term pain. 
+                This is unnecessary because most pigs will not tail bite if they are provided with adequate enrichment. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Pnoserings" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Nose rings</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Pigs have a very strong instinct to root in the ground. Workers put nose rings on pigs to prevent them from digging up pasture. Nose rings cause pain and prevent pigs from performing a strong behavioral need. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Pearnotching" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Ear notching</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Workers sometimes cut pigs’ ears to mark them for identification. This causes pain and distress. Ear notching is unnecessary because other suitable forms of identification, such as tags and tattoos, are less invasive. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Pcastration" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Castration without pain control</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Workers castrate male pigs without anesthesia or pain medication. This causes extreme pain initially and lingering trauma for several days. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Pheat" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Extreme heat</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Pigs can’t sweat. They cool off by wallowing in mud and water. The evaporation of the water promotes cooling while the mud shades their skin. They can overheat if workers do not allow them to wallow.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Plifespan" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Life span</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Pigs can live up to fifteen years, but most pigs on factory farms are killed after six months. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="turkeys" data-add-back-btn="true" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Turkeys</h1>
+        </header>
+        <ul data-role="listview">
+          <li><a href="#Tconfinement">Overcrowding and confinement</a></li>
+          <li><a href="#Tprocedures">Procedures without pain control</a></li>
+          <li><a href="#Cantibiotics">Antibiotics</a></li>
+          <li><a href="#Tgrowth">Unnatural growth</a></li>
+          <li><a href="#Ctransport">Transport</a></li>
+          <li><a href="#Cslaughter">Slaughter</a></li>
+        </ul>
+      </div>
+      <div data-role="page" id="Tconfinement" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Overcrowding and confinement</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                On factory farms, turkeys are housed in windowless warehouses with little ventilation. Each female bird is given fewer than two-and-a-half square feet of space, each male bird fewer than four feet. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Tprocedures" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Procedures without pain control</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Workers clip the beaks, toes, and waddles of turkeys to prevent them from injuring each other in their crowded living spaces. Each of these practices is unnecessary and prohibited by most humane certifications. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Tgrowth" data-add-back-btn="true" >
+        <header data-role="header">
+          <h1>Unnatural growth</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                To meet demand for turkey meat, factory farms have forced turkeys to balloon in size. Wild turkeys weigh 5-18 pounds. A domesticated turkey in 1960 weighed 16 pounds. Today, the average turkey weighs 29 pounds. Some turkeys are genetically modified to grow faster. They grow so quickly that their bodies can’t keep up. This causes several health problems for the turkeys. Their joints are swollen and their legs are crippled from supporting their own weight; their hearts can’t keep up with the rapid growth; they are too heavy to fly.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="sheep-lamb" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Sheep/Lamb</h1>
+        </header>
+        <ul data-role="listview">
+          <li><a href="#Scastration">Castration</a></li>
+          <li><a href="#Staildocking">Tail docking</a></li>
+          <li><a href="#Smulesing">Mulesing</a></li>
+          <li><a href="#Ctransport">Transport</a></li>
+          <li><a href="#Bslaughter">Slaughter</a></li>
+        </ul>
+      </div>
+      <div data-role="page" id="Scastration" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Castration</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Most male lambs are castrated to prevent breeding, aid fattening, and reduce aggression. This is usually done without anesthetic. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Staildocking" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Tail docking</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Lambs typically have their tails removed. This is done to prevent feces from building up around the tail, which would lead to lesions and infections from flies. Tail docking is not necessary with proper management. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="Smulesing" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Mulesing</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Mulesing is when sections of skin around the tail of sheep are removed. It is performed on sheep that produce wool to prevent lesions and infections from flies. This is usually done without anesthetic. The use of temporary pain control is becoming more common, but is not enough. The procedure is not necessary, as alternatives exist. 
+                <br><br>
+                Mulesing is mostly performed in Australia; however, many US retailers import Australian wool. Some progress is being made. A number of companies have urged Australia to end mulesing in favor of alternatives. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="seafood" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Seafood</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                The humane aspects regarding seafood are complex and varied. Some seafood options, such as scallops, are humane. Other options, like lobster, are cruel. Some seafood choices support fishing practices that result in bycatch. For example, for every one pound of harvested shrimp, four pounds of other seafood are caught (e.g. fish, turtles). 
+                <br><br>
+                Currently there are no animal welfare certifications that certifies wild or farmed seafood production. In the future, we plan to address seafood when we can do so in a way that provides high value to our users.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="watchlist" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>The Watch List</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                All of the issues described in this app cause intense suffering to animals. Some of them are particularly egregious and are easy to spot on a menu. We want to completely avoid restaurants that serve these foods. 
+                <br><br>
+                If you see the following food items on the menu, please flag the restaurant by clicking the 'Edit' button at the restaurant listing screen, and make a note of which Watch List items the restaurant is selling.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ul data-role="listview">
+          <li><a href="#veal">Veal</a></li>
+          <li><a href="#foie">Foie gras</a></li>
+          <li><a href="#sharkfin">Shark fin soup</a></li>
+          <li><a href="#livestorage">Live storage</a></li>
+        </ul>
+        &nbsp;<br>nbsp;<br>&nbsp;<br>&nbsp;<br>
+      </div>
+      <div data-role="page" id="veal" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Veal</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Calves used for veal come from the dairy industry (link to dairy section). Calves are taken from their mothers within a day of being born. The females are raised as dairy cows while the males are used for veal. Half of all veal comes from calves kept in veal crates – small, dark crates that keep the calves immobile. Veal crates limit muscle development to produce meat that is more tender.
+                How to spot on the menu: Very simple – it will be clearly labeled as veal on the menu. It is most often served in Italian restaurants. 
+                <br><br><b>How to spot on the menu:
+                </b>
+                Very simple – it will be clearly labeled as veal on the menu. It is most often served at Italian restaurants. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="foie" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Foie gras</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Foie gras is the fattened liver of a duck or goose. The liver is fattened through a process of force feeding. Force feeding causes the liver to grow to 6-10 times its normal size. To force feed a bird, a worker inserts a metal feeding tube that forces the bird to eat several times more than it would voluntarily. The feeding tubes harm the bird’s throat and can severely injure or kill him. Force fed birds suffer impaired liver functions because of the liver’s swollen size. It can grow so big that it expands to other parts of the abdomen, making it difficult to breathe.
+                <br><br><b>How to spot on the menu:
+                </b>
+                Often served at French restaurants as foie gras or pate de foie gras. Not all pate is foie gras (although even if it is not, it may still be inhumane). 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="sharkfin" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Shark fin soup</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Shark fin soup is a Chinese dish served on special occasions. Culturally, it is a luxury item and a symbol of wealth. Fishermen obtain the fins by catching a shark, removing its fin, and throwing it back into the ocean – all while the shark is still alive. Without its fin, the shark is unable to swim properly. It sinks to the bottom of the ocean or is eaten by other predators. Shark fin soup has been banned in some countries and in a handful of U.S. states. Demand for the dish has decreased significantly in recent years thanks to awareness campaigns. How to spot on the menu: Served in Chinese restaurants as “shark fin soup.” 
+                <br><br><b>How to spot on the menu:
+                </b>
+                Served in Chinese restaurants as Shark Fin soup. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="livestorage" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Live storage</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Storing live animals on-site at a restaurant is never a good thing and is easily identifiable. Typically, live storage involves seafood, particularly crab and lobster.
+                <br><br><b>How to spot on the menu:
+                </b>
+                You may see "Live" on the menu, but also look out for aquarium's on display in the restaurant.   This is more common at restaurants w/ Lobster or Crab in the name or signage.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="resources" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Resources/Links</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                <a href="http://www.humanesociety.org/issues/eating/#.U0DTu6FoQTE">HSUS Humane Eating</a><br><br>
+                <a href="http://www.humanesociety.org/issues/confinement_farm/facts/meat_dairy_labels.html#.U0DTUKFoQTF">Meat and dairy labels</a><br><br>
+                <a href="http://www.humanesociety.org/issues/confinement_farm/facts/guide_egg_labels.html#.U0DTiKFoQTF">Egg labels</a><br><br>
+                <a href="http://animalwelfareapproved.org/consumers/food-labels/">AWA Food Labeling for Dummies</a><br><br>
+                <a href="http://animalwelfareapproved.org/">Animal Welfare Approved</a><br><br>
+                <a href="http://www.globalanimalpartnership.org/">Global Animal Partnership</a><br><br>
+                <a href="http://certifiedhumane.org/">Certified Humane</a><br><br>
+                <a href="http://www.huffingtonpost.com/news/food-for-thought/">Huffington Post Food for Thought</a><br><br>
+                <a href="www.vegnews.com">VegNews</a><br><br>
+                <a href="http://www.nomeatathlete.com/">No Meat Athlete</a><br><br>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        &nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+      </div>
+      <div data-role="page" id="talkingpoints" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Raising Awareness</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                <b><u>
+                Talking to a restaurants<br>
+                </b></u> Contacting restaurants to raise awareness is very important to the Humane Eating Project.  The more restaurants know that their customers care about animals the more likely they are to make better sourcing/menu decisions.
+                <b>
+                <br><br>
+                Who to talk to<br>
+                </b>We recommend talking to the manager/owner
+                <b>
+                <br><br>
+                Tone<br>
+                </b>Its very important that the tone be kept positive and business like. Its important that humane eating is a trend and the tide is moving in this direction.   They will be missing out on business by not responding to this growing demand. In addition, humane eater's are very loyal customers and are willing to pay a premium to ensure that animals are treated better.
+                <b>
+                <br><br>
+                Getting a restaurant to "Go humane"<br>
+                </b>We suggest dining at the restaurant first.  If you are a vegan/vegetarian and want to encourage them to add a vegan/vegetarian then simply let them know this and that when they do that you will add them to the Humane Eating Project.  Remind them that they are missing out on vegan/vegetarian customers and that one or two veg items doesn't cut it - they need a menu (at least 25% in size as the main menu) to be included in the app.   <br><br>If you are a meat eater and want to encourage them to add humanely-raised options,  let them know that they can be included with as little as one dish clearly identified as Humanely Raised.  Let them know that people are really starting to pay attention to this issue and they are losing customers - but not at least having one option on the menu for people to chose.
+                <br><br>
+                <b>
+                Getting a restaurant to get off the Watch List<br>
+                </b>Again, we suggest dining at the restaurant first even though this might be uncomfortable.  Let the restaurant know that they are on the Watch List on the app and which menu items are causing them that designation - and that many people are very disturbed by that type of food and will use tools like the Humane Eating Project to avoid their restaurant.  The app should speak for itself from there.<br><br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        &nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+      </div>
+      <div data-role="page" id="howcanihelp" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>How can I help?</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                <b><u>
+                1. Add Restaurant Listings
+                </b></u> - Add your favorite humane restaurants and watch out for restaurants selling Watch List foods (and add those restaurants, too).<br><br>
+                <b><u>
+                2. Invite your friends to use the app 
+                </b></u>
+                <br><br>
+                <b><u>
+                3. Learn about the issues 
+                </b></u>
+                - Click the Learn Button and visit other animal welfare organizations' websites to discover more about the issues.  
+                <br><br>
+                <b><u>
+                4. Be Counted: 
+                </b></u>
+                Vote with your pocketbook. Like and Tweet about restaurants and about The Humane Eating Project to spread awareness. 
+                <br><br>
+                <b><u>
+                5. Talk to restaurants:
+                </b></u>
+                Talk to restaurants that are selling Watch List items or that are not yet in our database (not yet humane). Show them The Humane Eating Project and explain to them how to be listed. 
+                <br><br>
+                <b><u>
+                6. Volunteer  
+                </b></u>
+                Would you like to contribute at a more rewarding level? We're looking for volunteers (you can work from anywhere). Please reach out to us at info@humaneeatingproject.org. 
+                <br><br>
+                <b><u>
+                7. Donate  
+                </b></u>
+                Please visit the America For Animals website and donate there if you would like to contribute to our efforts.
+                <br><br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br>
+      </div>
+      <div data-role="page" id="howtogohumane" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Restaurants: How to go humane</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                There are two ways to qualify for inclusion in The Humane Eating Project<br><br>
+                <b>Offer a vegan or vegetarian menu* <br>
+                </b>or<br>
+                <b>2. Have one or more items on the menu clearly identified as Humanely Raised.</b><br><br>Of course, its not enough just to say it - you need to use vendors (farms) that are humanely raising and treating their animals.  In lieu of specifying which items on the menu are Humanely Raised, you can make a general statement somewhere on your menu, restaurant signage or website.
+                <br><br>
+                You can find farms/distributors through the Certified Humane and Animal Welfare Approved vendor database:
+                <br>
+                <a href="http://www.animalwelfareapproved.org/product-search/">Animal Welfare Approved</a>
+                <br>
+                <a href="http://www.certifiedhumane.org/index.php?page=where-to-buy">Certified Humane</a>
+                <br><br>
+                You can contact the 
+                <a href="http://www.globalanimalpartnership.org/contact-us/">Global Animal Partnership</a>
+                to find a distributer near you.
+                <br>
+                <br>
+                Don't hesitate to contact any of the certification agencies for help on getting started.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="suggestions" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>&nbsp;</h1>
+        </header>
+        <div data-role="content">
+          <p><b>We would love to hear from you.  We're particularly fond of suggestions!</b></p>
+          <textarea name="feedback" id="feedback" value=""></textarea>
+          <p><b>If you would like a response, please give us your email address.</b></p>
+          <div class="ui-grid-b">
+            <div class="ui-block-a"><input type='text' id='email'></div>
+            <div class="ui-block-b">
+            </div>
+            <div class="ui-block-c">
+              <a href="#thankYou"  onclick="sendEmail()" data-mini="true" data-role="button">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-role="page" id="faq" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>FAQ</h1>
+        </header>
+        <ul data-role="listview">
+          <li><a href="#whodetermines">Who determines what is humane?</a></li>
+          <li><a href="#otherterms">What about grass fed, free range etc? </a></li>
+          <li><a href="#howtohelp">How can we help the project? </a></li>
+          <li><a href="#isitbetter">Is eating humane better for the environment and my health? </a></li>
+          <li><a href="#grocerystores">What about grocery stores? </a></li>
+          <li><a href="#seafoodrestaurants">What about seafood restaurants? </a></li>
+          <li><a href="#whatcountries">What countries will the app work in?</a></li>
+        </ul>
+        &nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+      </div>
+      <div data-role="page" id="whodetermines" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Who determines what is humane?</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                We are including every restaurant that has a vegan/vegetarian menu or that mentions humanely-raised food in its menu or website. Similar terms such as “humane” or “humanely-treated” are allowed. Initially we need to map out everywhere the term is being used and encourage restaurants to do the right thing. In a future release, once we have achieved a critical mass of users and restaurants, we will indicate which restaurants are sourcing from third party humane-certified farms using third party certification organizations such as Certified Humane, Animal Welfare Approved, and Global Animal Partnership.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="otherterms" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>What about grass fed, free range etc?</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Terms like free-range or grass-fed indicate some marginal benefit to farm animals, but do not equate to a commitment of treating an animal humanely. Many of these terms address only one issue of animal welfare. Vegan is the only option that is completely cruelty-free, but eating humanely-raised is a big improvement over eating factory farmed meat.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="howtohelp" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>How can we help the project?</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                While donations are always appreciated, we need to raise awareness about how easy it is to eat humanely. Please spread the word to your friends, family, and coworkers and like or share our posts on Facebook and Twitter. We also need help from our users to add new listings, particularly humane restaurants.
+                <br><br>
+                If you wish to donate, please visit the America For Animals website and click on the Donate button on our home page.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="isitbetter" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>Is eating humane better for the environment and my health?</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                The health benefits are very high for eating vegan and significant for eating vegetarian. Undoubtedly, most farmers that raise their animals humanely are also feeding them a better diet, not giving them an excess of of antibiotics, and so on. Humane farms are likely better for the environment in many ways – but the point of the Humane Eating Project is really to focus on eating in ways that cause less cruelty to animals. The rest of the benefits are a bonus!
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="grocerystores" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>What about grocery stores?</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                We plan to add grocery stores in the future. We feel that restaurants are more important right now for a variety of reasons. If you want to buy humanely-raised products at your grocery store, there are three third party certifications to look for: Global Animal Partnership (GAP), Certified Humane, and Animal Welfare Approved (AWA). GAP-certified products are available at Whole Foods. You can search the Certified Humane and AWA websites for where to find their products near you.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="seafoodrestaurants" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>What about seafood restaurants?</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                The humane aspects regarding seafood are complex and varied and there are no animal welfare certifications to verify wild or farmed practices. We plan to address seafood when we can do so in a way that provides high value to our users.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="whatcountries" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>What countries will the app work in?</h1>
+        </header>
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="4">
+          <tbody>
+            <tr>
+              <td>
+                Short answer: At launch time we will have Vegan/Vegetarian restaurant listings globally but for Humane-Friendly and Watch-List restaurants we only have data for the USA. With the help of VegGuide.org, we have over 20,000 restaurants total in our database.
+                <br><br>
+                Long answer: We encourage users all around the world to use the app and add more Humane Friendly and Watch List restaurants to make the app more global oriented.
+                <br><br>
+                In the future, we will have to customize the Watch List feature country-by-country because these issues are unique to each country. We will also have to customize the educational aspects of the app (The Learn button) – again, to be more relevant to each country. In the more distant future, we’ll add support for other languages aside from English.
+                <br><br>
+                So as it is now, the app is geared towards users in the USA, but we hope that changes quickly.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-role="page" id="thankYou" data-add-back-btn="true">
+        <header data-role="header">
+          <h1>&nbsp;</h1>
+        </header>
+        <div data-role="content" >
+          <p>Thank you for contributing!</p>
+          <p>The update will be reviewed and our system updated in 2-3 days.</p>
+        </div>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>
